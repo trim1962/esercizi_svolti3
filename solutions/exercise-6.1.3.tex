@@ -1,0 +1,57 @@
+ $\sin x=\num[round-precision=2,round-mode=places]{-0.75}$
+
+ Controllare che la calcolatrice sia impostata in gradi sessagesimali\index{Grado!Sessagesimale}\index{Seno}.
+
+ Basta verificare che
+ \testgradi
+
+ In caso contrario modificare le impostazioni.
+
+ Le soluzioni sono
+ \[\begin{cases}
+ x_1=\alpha+k\ang{360}\\
+ x_2=\ang{180}-\alpha+k\ang{360}\\
+ \end{cases}\]
+ Calcolo $\alpha$
+
+ \begin{center}
+ \begin{tabular}{ll}
+ \tastoisin\tasto{\num[round-precision=2,round-mode=places]{-0.75}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{-48.59037789}{\si{\degree}}
+ \end{tabular}
+ \end{center}
+
+ \[\begin{cases}
+ x_1=\alpha+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{-48.59037789}{\si{\degree}}+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{311.4096221}{\si{\degree}}+k\ang{360}\\
+ x_2=-\ang{180}+\alpha+k\ang{360}=\SI[round-precision=\lungarrotandamento,round-mode=places]{228.5903789}{\si{\degree}}+k\ang{360}\\
+ \end{cases}\]
+
+ Converto in gradi sessagesimali\index{Grado!Sessagesimale} $x_1$
+
+ \begin{center}
+ \begin{tabular}{ll}
+ \tastoans\tastomeno\tasto{311}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.409622109}{\si{\degree}}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{24.57732655}{\si{\arcminute}}\\
+ \tastoans\tastomeno\tasto{48}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.577326552}{\si{\arcminute}}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{34.63959312}{\si{\arcsecond}}\\
+ \end{tabular}
+ \end{center}
+ \[x_1=\ang{311;24;34}\]
+
+ Converto in gradi sessagesimali\index{Grado!Sessagesimale} $x_2$
+
+ \begin{center}
+ \begin{tabular}{ll}
+ \tastoans\tastomeno\tasto{228}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.59037789}{\si{\degree}}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{35.42267345}{\si{\arcminute}}\\
+ \tastoans\tastomeno\tasto{48}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.422673448}{\si{\arcminute}}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{25.36040688}{\si{\arcsecond}}\\
+ \end{tabular}
+ \end{center}
+ \[x_2=\ang{228;35;25}\]
+
+ le soluzioni sono quindi
+ \[\begin{cases}
+ x_1=\ang{311;24;34}+k\ang{360}\\
+ x_2=\ang{228;35;25}+k\ang{360}\\
+ \end{cases}\]
+ 

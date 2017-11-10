@@ -1,0 +1,15 @@
+bes.bib.bak
+*.aux
+*.cthm
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lol
+*.mw
+*.pdf
+*.records
+*.gz
+*.thm
+*.toc

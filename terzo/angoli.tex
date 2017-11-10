@@ -1,0 +1,176 @@
+\chapter{Angoli}
+\label{cha:angolibase}
+
+\section{Conversioni radianti gradi}
+\begin{esempiot}{Conversioni radianti gradi}{}
+Convertire $\alpha=\ang{45;58;25}$ in radianti\index{Radianti}
+\end{esempiot}
+Prima convertiamo in gradi decimali\index{Radianti}\index{Grado!Sessagesimale}
+\[\alpha=\ang{45}+\left(\dfrac{58}{60}\right)^{\si{\degree} }+\left(\dfrac{25}{3600}\right)^{\si{\degree} }=\ang{45}+\left(\dfrac{58\cdot60+25}{3600}\right)^{\si{\degree} } =\ang{45}+\left(\dfrac{3505}{3600}\right)^{\si{\degree} }\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{45.97361111}\]
+\[\rho=\dfrac{\pi}{180}\alpha\approx\dfrac{\pi}{180}\cdot\ang[round-precision=\lungarrotandamento,round-mode=places]{45.97361111}\approx\SI[round-precision=\lungarrotandamento,round-mode=places]{0.802390882}{\radian}\]
+\stampapuntini
+\begin{esempiot}{Conversioni radianti gradi}{}
+	Convertire $\alpha=\ang{70;48;25}$ in radianti
+\end{esempiot}
+Prima convertiamo in gradi decimali \index{Radiante}\index{Grado!Sessagesimale}\index{Grado!Sessadecimale}
+\[\alpha=\puntini{\ang{70}}+\left(\dfrac{48}{60}\right)^{\si{\degree} }+\left(\dfrac{25}{3600}\right)^{\si{\degree} }=\ang{70}+\left(\dfrac{\puntini{48\cdot60}+25}{3600}\right)^{\si{\degree} } =\ang{70}+\left(\dfrac{\puntini{2905}}{3600}\right)^{\si{\degree} }\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{70.806944}\]
+\[\rho=\dfrac{\puntini{\pi}}{180}\alpha\approx\dfrac{\puntini{\pi}}{180}\cdot\ang[round-precision=\lungarrotandamento,round-mode=places]{70.806944}\approx\puntini{\SI[round-precision=\lungarrotandamento,round-mode=places]{1.2358143}{\radian}}\]
+\nonstampapuntini
+\begin{esempiot}{Conversioni radianti gradi}{}
+	Convertire\SI[round-precision=\lungarrotandamento,round-mode=places]{2.856}{\radian} in gradi sessagesimali
+\end{esempiot}
+\[\alpha=\dfrac{180}{\pi}\cdot\rho=\dfrac{180}{\pi}\cdot\SI[round-precision=\lungarrotandamento,round-mode=places]{2.856}{\radian}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{163.6367463}\]
+Iniziamo con 
+$\alpha=\ang{163}+\ang[round-precision=\lungarrotandamento,round-mode=places]{0.6367463}$
+\begin{align*}
+\alpha^{\si{\degree} }&=\ang{163}\\ 
+\alpha^{\si{\arcminute}}&=\ang[round-precision=\lungarrotandamento,round-mode=places]{0.6367463;;}\cdot 60=\ang[round-precision=\lungarrotandamento,round-mode=places]{;38.20477736;}=\ang{;38;}\\
+\alpha^{\si{\arcsecond}}&=\ang[round-precision=\lungarrotandamento,round-mode=places]{;0.204777358;}\cdot 60\approx\ang{;;12}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang[round-precision=\lungarrotandamento,round-mode=places]{163.6367463}=\ang{163;38;12}\]
+\stampapuntini
+\begin{esempiot}{Conversioni radianti gradi}{}
+	Convertire \SI[round-precision=\lungarrotandamento,round-mode=places]{0.823310}{\radian} in gradi sessagesimali
+\end{esempiot}
+\[\alpha=\dfrac{180}{\pi}\cdot\rho=\dfrac{180}{\pi}\cdot\SI[round-precision=\lungarrotandamento,round-mode=places]{0.823310}{\radian}\approx\puntini{\ang[round-precision=\lungarrotandamento,round-mode=places]{47.17218823}}\]
+Iniziamo con 
+$\alpha=\ang{47}+\ang[round-precision=\lungarrotandamento,round-mode=places]{0.17218823}$
+\begin{align*}
+\alpha^{\si{\degree}}&=\puntini{\ang{47}}\\ 
+\alpha^{\si{\arcminute}}&=\ang[round-precision=\lungarrotandamento,round-mode=places]{0.17218823;;}\cdot 60=\puntini{\ang[round-precision=\lungarrotandamento,round-mode=places]{;10.33129385;}}=\puntini{\ang{;10;}}\\
+\alpha^{\si{\arcsecond}}&=\puntini{\ang[round-precision=\lungarrotandamento,round-mode=places]{;0.331293854;}\cdot 60\approx\ang{;;19}}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang[round-precision=\lungarrotandamento,round-mode=places]{47.17218823}=\ang{47;10;19}\]
+\section{Da grado sessagesimale a sessa-decimale}
+ \tcbstartrecording
+ \begin{exercise}
+Trasformare $\alpha=\ang{52;38;28}$ in forma sessa-decimale\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+\tcblower
+\begin{align*}
+\alpha=&\ang{52}+\left(\dfrac{38}{60}\right)^{\si{\degree} }+\left(\dfrac{28}{3600}\right)^{\si{\degree} }\\
+=&\ang{52}+\left(\dfrac{38\cdot60+28}{3600}\right)^{\si{\degree} }\\
+=&\ang{52}+\left(\dfrac{2308}{3600}\right)^{\si{\degree} }\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{52,641111}
+\end{align*}
+\end{exercise}
+ \begin{exercise}
+ 	Trasformare  $\alpha=\ang{75;55;35}$ in forma sessa-decimale\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+ 	\tcblower
+ 	\begin{align*}
+ 	\alpha=&\ang{75}+\left(\dfrac{55}{60}\right)^{\si{\degree} }+\left(\dfrac{35}{3600}\right)^{\si{\degree} }\\
+ 	=&\ang{75}+\left(\dfrac{55\cdot60+35}{3600}\right)^{\si{\degree}}\\
+ 	=&\ang{75}+\left(\dfrac{3335}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{75,92638}
+ 	\end{align*}
+ \end{exercise}
+  \begin{exercise}
+  	Trasformare  $\alpha=\ang{38;21;10}$ in forma sessa-decimale\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+  	\tcblower
+  	\begin{align*}
+  	\alpha=&\ang{38}+\left(\dfrac{21}{60}\right)^{\si{\degree} }+\left(\dfrac{10}{3600}\right)^{\si{\degree} }\\
+  	=&\ang{38}+\left(\dfrac{21\cdot60+10}{3600}\right)^{\si{\degree}}\\
+  	=&\ang{38}+\left(\dfrac{1270}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{38,35277778}
+  	\end{align*}
+  \end{exercise}
+  \begin{exercise}
+  	Trasformare  $\alpha=\ang{74;58;27}$ in forma sessa-decimale\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+  	\tcblower
+  	\begin{align*}
+  	\alpha=&\ang{74}+\left(\dfrac{58}{60}\right)^{\si{\degree} }+\left(\dfrac{27}{3600}\right)^{\si{\degree} }\\
+  	=&\ang{74}+\left(\dfrac{58\cdot60+27}{3600}\right)^{\si{\degree}}\\
+  	=&\ang{74}+\left(\dfrac{3507}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{74,9741666667}
+  	\end{align*}
+  \end{exercise}
+  \begin{exercise}
+  	Trasformare  $\alpha=\ang{128;31;5}$ in forma sessa-decimale\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+  	\tcblower
+  	\begin{align*}
+  	\alpha=&\ang{128}+\left(\dfrac{31}{60}\right)^{\si{\degree} }+\left(\dfrac{5}{3600}\right)^{\si{\degree} }\\
+  	=&\ang{128}+\left(\dfrac{31\cdot60+5}{3600}\right)^{\si{\degree}}\\
+  	=&\ang{128}+\left(\dfrac{1865}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{128,51666600667}
+  	\end{align*}
+  \end{exercise}
+  \begin{exercise}
+  	Trasformare  $\alpha=\ang{77;40;10}$ in forma sessa-decimale\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+  	\tcblower
+  	\begin{align*}
+  	\alpha=&\ang{77}+\left(\dfrac{40}{60}\right)^{\si{\degree} }+\left(\dfrac{10}{3600}\right)^{\si{\degree} }\\
+  	=&\ang{77}+\left(\dfrac{40\cdot60+10}{3600}\right)^{\si{\degree}}\\
+  	=&\ang{77}+\left(\dfrac{2410}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{77,66944444}
+  	\end{align*}
+  \end{exercise}
+\tcbstoprecording
+\newpage
+\section{Soluzioni da grado sessagesimale a sessa-decimale}
+\tcbinputrecords
+\section{Da grado sessa-decimale a sessagesimale}
+\tcbstartrecording
+\begin{exercise}
+	Convertire $\alpha=\ang{75.84}$ in gradi sessagesimali\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+	\tcblower
+	Iniziamo con\index{Grado!Sessadecimale}\index{Grado!Sessagesimale}
+	$\alpha=\ang{75}+\ang{0.84}$ in gradi sessagesimali
+	\begin{align*}
+	\alpha^{\si{\degree}}&=\ang{75}\\ 
+	\alpha^{\si{\arcminute}}&=\ang{0.84}\cdot 60=\ang{;50.4;}=\ang{;50;}\\
+	\alpha^{\si{\arcsecond}}&=\ang{;0.4;}\cdot 60=\ang{;;24}\\
+	\end{align*}
+	abbiamo quindi
+	\[\alpha=\ang{75.84}=\ang{75;50;24}\]
+\end{exercise}
+\begin{exercise}
+Convertire $\alpha=\ang{45.35}$ in gradi sessagesimali\index{Grado!Sessa-decimale}\index{Grado!Sessagesimale}
+	\tcblower
+Iniziamo con 
+$\alpha=\ang{45}+\ang{0.35}$
+\begin{align*}
+\alpha^{\si{\degree}}&=\ang{45}\\ 
+\alpha^{\si{\arcminute}}&=\ang{0.35}\cdot 60=\ang{;21.0;}=\ang{;21;}\\
+\alpha^{\si{\arcsecond}}&=\ang{;0;}\cdot 60=\ang{;;0}\\
+\end{align*}
+abbiamo quindi
+\[\alpha=\ang{45.35}=\ang{45;21;0}\]
+\end{exercise}
+\begin{exercise}
+	Convertire $\alpha=\ang{74.9742}$ in gradi sessagesimali\index{Grado!Sessa-decimale}\index{Grado!Sessagesimale}
+	\tcblower
+	Iniziamo con 
+	$\alpha=\ang{74}+\ang{0.9742}$
+	\begin{align*}
+	\alpha^{\si{\degree}}&=\ang{74}\\ 
+	\alpha^{\si{\arcminute}}&=\ang{0.9742}\cdot 60=\ang{;58.452;}\\
+	\alpha^{\si{\arcsecond}}&=\ang{;0.452;}\cdot 60=\ang{;;27.12}\\
+	\end{align*}
+	abbiamo quindi
+	\[\alpha=\ang{74.9742}=\ang{74;58;27}\]
+\end{exercise}
+\begin{exercise}
+	Convertire $\alpha=\ang{128.5167}$ in gradi sessagesimali\index{Grado!Sessa-decimale}\index{Grado!Sessagesimale}
+	\tcblower
+	Iniziamo con 
+	$\alpha=\ang{128}+\ang{0.5167}$
+	\begin{align*}
+	\alpha^{\si{\degree}}&=\ang{128}\\ 
+	\alpha^{\si{\arcminute}}&=\ang{0.5167}\cdot 60=\ang{;31.002;}\\
+	\alpha^{\si{\arcsecond}}&=\ang{;0.002;}\cdot 60=\ang{;;0.12}\\
+	\end{align*}
+	abbiamo quindi
+	\[\alpha=\ang{128.5167}=\ang{128;31;0}\]
+\end{exercise}
+\begin{exercise}
+	Convertire $\alpha=\ang{77.6694}$ in gradi sessagesimali\index{Grado!Sessa-decimale}\index{Grado!Sessagesimale}
+	\tcblower
+	Iniziamo con 
+	$\alpha=\ang{77}+\ang{0.6694}$
+	\begin{align*}
+	\alpha^{\si{\degree}}&=\ang{77}\\ 
+	\alpha^{\si{\arcminute}}&=\ang{0.6694}\cdot 60=\ang{;40.164;}\\
+	\alpha^{\si{\arcsecond}}&=\ang{;0.164;}\cdot 60=\ang{;;9.84}\\
+	\end{align*}
+	abbiamo quindi
+	\[\alpha=\ang{77.6694}=\ang{77;40;9}\]
+\end{exercise}
+\tcbstoprecording
+\newpage
+\section{Soluzioni da grado sessa-decimale a sessagesimale}
+\tcbinputrecords

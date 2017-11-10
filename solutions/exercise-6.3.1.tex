@@ -1,0 +1,42 @@
+$\sin 3x=\num[round-precision=2,round-mode=places]{0.48}$
+
+ Controllare che la calcolatrice sia impostata in radianti\index{Radianti}\index{Seno}.
+
+ Basta verificare che
+ \testradianti
+
+ In caso contrario modificare le impostazioni.
+
+ Non resta che procedere con il calcolo.
+
+ Le soluzioni sono
+ \[\begin{cases}
+ x_1=\alpha+2k\pi\\
+ x_2=\pi-\alpha+2k\pi\\
+ \end{cases}\]
+ Calcolo $\alpha$
+
+ \begin{center}
+ \begin{tabular}{ll}
+ \tastoisin\tasto{\num[round-precision=2,round-mode=places]{0.48}}
+ \tastouguale&\num[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}\\
+ \end{tabular}
+ \end{center}
+ \[\alpha= \SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}{\radian}\]
+ \begin{align*}
+ 3x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}+2k\pi \si{\radian}\\
+ x_1&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.166884904}+\dfrac{2}{3}k\pi \si{\radian}\\
+ \end{align*}
+ \begin{align*}
+ 3x_2&=\pi-\SI[round-precision=\lungarrotandamento,round-mode=places]{0.500654712}+2k\pi \si{\radian}\\
+ 3x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{2.640937182}+2k\pi \si{\radian}\\
+ x_2&=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfrac{2}{3}k\pi \si{\radian}\\
+ \end{align*}
+ Le soluzioni sono
+
+\[\begin{cases}
+x_1=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.166884904}+\dfrac{2}{3}k\pi \si{\radian}\\
+\\
+x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfrac{2}{3}k\pi \si{\radian}\\
+ \end{cases}\]
+ 
