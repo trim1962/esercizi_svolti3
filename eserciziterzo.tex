@@ -40,19 +40,25 @@
 terzo/gonio,
 	terzo/geome, 
 }
-
+\usepackage{tkz-berge}
 \begin{document}
 \frontmatter
-\begin{titlepage}
+		\begin{titlepage}
 	\begin{center}
-		\input{../Mod_base/Lgrande2}\\[1cm]       
+		\input{../Mod_base/Lgrande}\\[1cm]
 		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 		\HRule \\[0.4cm]
-		{\huge \bfseries Esercizi svolti di matematica}\\[0.4cm]
-		{\bfseries TERZO}\\[0.4cm]
+		{ \huge \bfseries ESERCIZI SVOLTI DI MATEMATICA}\\[0.4cm]
+		{\LARGE \textsc{TERZO}}
 		\HRule \\[1.5cm]
 		\vfill
-		{\large \DTMnow.}
+	\end{center}
+	\begin{center}
+		\begin{tikzpicture}
+		\renewcommand*{\VertexBallColor}{green!50!black}
+		\GraphInit[vstyle=Art]
+		\grComplete[RA=5]{18}
+		\end{tikzpicture}
 	\end{center}
 \end{titlepage}
 \setcounter{page}{2}
