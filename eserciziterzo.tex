@@ -4,6 +4,7 @@
 \input{../Mod_base/grafica}
 \input{../Mod_base/rifIndici}
 \input{../Mod_base/tcolorboxgest}
+
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
@@ -11,6 +12,22 @@
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 \input{../Mod_base/pagina}
 \input{../Mod_base/indice}
+%\titlecontents{figure}
+%[0em]{}
+%{\thecontentslabel\hspace*{1.5em}}
+%{}{\titlerule*[3pt]{}\contentspage}
+%\titlecontents{table}
+%[0em]{}
+%{\thecontentslabel\hspace*{1.5em}}
+%{}{\ \titlerule*[3pt]{}\contentspage}
+%\titlecontents{figure}%
+%[0em]% 
+%{\addvspace{2em}}%
+%{\bfseries\@chapapp\ \thecontentslabel\quad}% 
+%{\hspace{-0em}}% 
+%{\hfill\contentspage}% 
+%[\addvspace{0pt}]% 
+
 \input{../Mod_base/date}
 \input{../Mod_base/loghi}
 \input{../Mod_base/unita_misura}
@@ -36,11 +53,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \includeonly{%
 	terzo/NotazioneScientifica,
-	terzo/complessi,
-terzo/gonio,
-	terzo/geome, 
+%	terzo/complessi,
+%terzo/gonio,
+%	terzo/geome, 
 }
+
 \usepackage{tkz-berge}
+\usepackage{hyperxmp}
+\usepackage{hyperref}
+\title{Esercizi svolti terzo}
+\author{Claudio Duchi}
+\date{\datetime}
+\hypersetup{%
+	pdfencoding=auto,
+	urlcolor={blue},
+	pdftitle={Esercizi svolti},
+	pdfsubject={terzo},
+	pdfstartview={FitH},
+	pdfpagemode={UseOutlines},
+	pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
+	pdflang={it},
+	pdfmetalang={it},
+	pdfkeywords={goniometria, trigoniometria, geometria analitica},
+	pdfcopyright={Copyright (C) 2017, Claudio Duchi},
+	pdfcontacturl={http://breviariomatematico.altervista.org},
+	pdfcontactpostcode={},
+	pdfcontactphone={},
+	pdfcontactemail={claduc},
+	pdfcontactcountry={Italy},
+	pdfcontactcity={Perugia},
+	pdfcontactaddress={},
+	pdfcaptionwriter={Claudio Duchi},
+	pdfauthortitle={},%
+	pdfauthor={Claudio Duchi},
+	linkcolor={blue},
+	colorlinks=true,
+	citecolor={red},
+	breaklinks,
+	bookmarksopen,
+	verbose,
+	baseurl={http://breviariomatematico.altervista.org}
+}
 \begin{document}
 \frontmatter
 		\begin{titlepage}
@@ -68,21 +121,26 @@ terzo/gonio,
 %\listoftables
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
-\cleardoublepage\renewcommand\lstlistlistingname{Elenco esempi}
+\cleardoublepage\renewcommand\lstlistlistingname{Esempi e contro esempi}
 \addcontentsline{toc}{chapter}{\lstlistlistingname}
 \addcontentsline{toc}{section}{Esempi}
-\lstlistoflistings{}
+\lstlistoflistings%{}
+{
+%	https://tex.stackexchange.com/questions/318486/number-freestyle-causes-an-overlay-in-the-list-of-tcolorboxes/318512#318512
+	\makeatletter
+	\renewcommand{\l@tcolorbox}{\@dottedtocline{1}{0pt}{3em}}
 \tcblistof[\section*]{thm}{Esempi}
 \addcontentsline{toc}{section}{Contro esempi}
 \tcblistof[\section*]{cthm}{Contro esempi}
+}
+
 \mainmatter%
-%\opt{prima}{\input{primo/prima}}
-%\opt{secondo}{\input{secondo/secondo}}
 \input{terzo/terzo}
-%\opt{quarto}{\input{quarto/quarto}}
-%\opt{extra}{\input{extra}}
-%\opt{grafici}{\input{grafici}}
-\input{../Mod_base/MezziUsati}
+\backmatter
+\begin{appendices}
+	\input{../Mod_base/MezziUsati}
+\end{appendices}
+
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex
 \end{document}
