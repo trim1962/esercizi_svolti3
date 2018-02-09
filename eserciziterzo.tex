@@ -2,13 +2,13 @@
 \input{../Mod_base/base}
 \geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
 \input{../Mod_base/grafica}
-\input{../Mod_base/rifIndici}
-\input{../Mod_base/tcolorboxgest}
+
 
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
 \DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
+\usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 \input{../Mod_base/pagina}
 \input{../Mod_base/indice}
@@ -53,14 +53,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \includeonly{%
 	terzo/NotazioneScientifica,
-%	terzo/complessi,
-%terzo/gonio,
-%	terzo/geome, 
+	terzo/complessi,
+terzo/gonio,
+	terzo/geome, 
 }
+\usepackage[toc,page]{appendix}
 
+\renewcommand{\appendixtocname}{Appendice}
+
+\renewcommand{\appendixpagename}{Appendice}
 \usepackage{tkz-berge}
+\usepackage[italian]{varioref}
 \usepackage{hyperxmp}
-\usepackage{hyperref}
+\usepackage[pdfpagelabels]{hyperref}
+\usepackage[italian]{cleveref}
+\input{../Mod_base/tcolorboxgest}
 \title{Esercizi svolti terzo}
 \author{Claudio Duchi}
 \date{\datetime}
@@ -75,7 +82,7 @@
 	pdflang={it},
 	pdfmetalang={it},
 	pdfkeywords={goniometria, trigoniometria, geometria analitica},
-	pdfcopyright={Copyright (C) 2017, Claudio Duchi},
+	pdfcopyright={Copyright (C) 2018, Claudio Duchi},
 	pdfcontacturl={http://breviariomatematico.altervista.org},
 	pdfcontactpostcode={},
 	pdfcontactphone={},

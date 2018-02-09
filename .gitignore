@@ -14,3 +14,6 @@ bes.bib.bak
 *.thm
 *.toc
 *.out
+/eserciziterzo.synctex(busy)
+/solutions/exercise-*.*
+/solutions/exercise-*.*
