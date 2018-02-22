@@ -51,12 +51,8 @@
 %%%lunghezza arrotondamenti%%%%%
 \newcommand{\lungarrotandamento}{4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\includeonly{%
-	terzo/NotazioneScientifica,
-	terzo/complessi,
-terzo/gonio,
-	terzo/geome, 
-}
+\input{compilaUNO}
+\usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 \usepackage[toc,page]{appendix}
 
 \renewcommand{\appendixtocname}{Appendice}
@@ -128,7 +124,7 @@ terzo/gonio,
 %\listoftables
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
-\cleardoublepage\renewcommand\lstlistlistingname{Esempi e contro esempi}
+\renewcommand\lstlistlistingname{Esempi e contro esempi}
 \addcontentsline{toc}{chapter}{\lstlistlistingname}
 \addcontentsline{toc}{section}{Esempi}
 \lstlistoflistings%{}
@@ -136,13 +132,14 @@ terzo/gonio,
 %	https://tex.stackexchange.com/questions/318486/number-freestyle-causes-an-overlay-in-the-list-of-tcolorboxes/318512#318512
 	\makeatletter
 	\renewcommand{\l@tcolorbox}{\@dottedtocline{1}{0pt}{3em}}
+	\makeatother
 \tcblistof[\section*]{thm}{Esempi}
 \addcontentsline{toc}{section}{Contro esempi}
 \tcblistof[\section*]{cthm}{Contro esempi}
 }
 
 \mainmatter%
-\input{terzo/terzo}
+\input{compilaDUE}
 \backmatter
 \begin{appendices}
 	\input{../Mod_base/MezziUsati}
