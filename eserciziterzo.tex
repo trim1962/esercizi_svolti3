@@ -12,28 +12,11 @@
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 \input{../Mod_base/pagina}
 \input{../Mod_base/indice}
-%\titlecontents{figure}
-%[0em]{}
-%{\thecontentslabel\hspace*{1.5em}}
-%{}{\titlerule*[3pt]{}\contentspage}
-%\titlecontents{table}
-%[0em]{}
-%{\thecontentslabel\hspace*{1.5em}}
-%{}{\ \titlerule*[3pt]{}\contentspage}
-%\titlecontents{figure}%
-%[0em]% 
-%{\addvspace{2em}}%
-%{\bfseries\@chapapp\ \thecontentslabel\quad}% 
-%{\hspace{-0em}}% 
-%{\hfill\contentspage}% 
-%[\addvspace{0pt}]% 
-
 \input{../Mod_base/date}
 \input{../Mod_base/loghi}
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/utili}
 \input{../Mod_base/stand_class}
-%per le semplificazioni
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \usepackage{placeins} 
@@ -77,7 +60,7 @@
 	pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
 	pdflang={it},
 	pdfmetalang={it},
-	pdfkeywords={goniometria, trigoniometria, geometria analitica},
+	pdfkeywords={goniometria, trigoniometria, numeri complessi},
 	pdfcopyright={Copyright (C) 2018, Claudio Duchi},
 	pdfcontacturl={http://breviariomatematico.altervista.org},
 	pdfcontactpostcode={},
@@ -105,19 +88,21 @@
 		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 		\HRule \\[0.4cm]
 		{ \huge \bfseries ESERCIZI SVOLTI DI MATEMATICA}\\[0.4cm]
-		{\LARGE \textsc{TERZO}}
+		{\LARGE \textsc{TERZO MANUTENZIONE}}
 		\HRule \\[1.5cm]
 		\vfill
-	\end{center}
-	\begin{center}
 		\begin{tikzpicture}
 		\renewcommand*{\VertexBallColor}{green!50!black}
 		\GraphInit[vstyle=Art]
 		\grComplete[RA=5]{18}
 		\end{tikzpicture}
 	\end{center}
+	{\centering
+	Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+	\gitCommitterDate \\
+}
 \end{titlepage}
-\setcounter{page}{2}
+\setcounter{page}{2} 
 \input{../Mod_base/copyright}
 \tableofcontents 
 %\addcontentsline{toc}{chapter}{\listtablename}
