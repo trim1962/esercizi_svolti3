@@ -1,9 +1,7 @@
-\documentclass[a4paper,oneside]{book}
+\documentclass[openany]{book}%
 \input{../Mod_base/base}
 \geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
 \input{../Mod_base/grafica}
-
-
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
@@ -29,7 +27,7 @@
 	\cleardoublepage
 	\@mainmattertrue}
 \makeatother
-\listfiles
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%lunghezza arrotondamenti%%%%%
 \newcommand{\lungarrotandamento}{4}
@@ -80,6 +78,7 @@
 	verbose,
 	baseurl={http://breviariomatematico.altervista.org}
 }
+\listfiles
 \begin{document}
 \frontmatter
 		\begin{titlepage}
