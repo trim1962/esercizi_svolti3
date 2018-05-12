@@ -1,15 +1,18 @@
 \chapter{Triangoli}
 \label{cha:trigonometriatriangoli}
  \section{Triangoli rettangoli}
+ 
 \begin{figure}
 	\centering
 	\includestandalone[width=.6\textwidth]{terzo/grafici/triangolopitagorico1}
 	\caption{Triangolo rettangolo}
 	\label{fig:triangolorettangolo}
 \end{figure}
+
 Vista la figura\nobs\vref{fig:triangolorettangolo} risolvere i seguenti esercizi
 % \tcbstartrecording
  \begin{exercise}
+ 	Dato un triangolo rettangolo con
  	\begin{align*}
  	a=&5\\
  	\beta=&\ang{30}
@@ -29,6 +32,7 @@ b=&a\sin\beta\\
  \end{exercise}
  
   \begin{exercise}
+  	Dato un triangolo rettangolo con
   	\begin{align*}
   	a=&5\\
   	\beta=&\ang{30}
@@ -46,6 +50,34 @@ b=&a\sin\beta\\
   	=& 7\sin\ang{35}=\num[round-precision=\lungarrotandamento,round-mode=places]{4.015035054}
   	\end{align*}
   \end{exercise}
+\begin{exercise}
+	Dato un triangolo rettangolo con
+	\begin{align*}
+	b=&5\\
+	c=&8
+	\end{align*}
+	\tcblower
+	Controllare che la calcolatrice sia impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+	Basta verificare che \testgradi 
+	\begin{align*}
+	a=&\sqrt{8^2+5^2}\\
+	=\sqrt{89}\\
+	b=&a\sin\beta\\
+	\sqrt{89}\sin\beta=&5\\
+	\sin\beta=&\frac{5}{\sqrt{89}}\\
+	\beta=&\arcsin\frac{5}{\sqrt{89}}\\
+	&\tasto{5}\tastodiv\tastoradicequadrata\tasto{89}\tastouguale\\
+	&\tastoisin\tastoans\tastouguale
+	\num[round-precision=\lungarrotandamento,round-mode=places]{32.00538321}\\
+	c=&a\sin\gamma\\
+\sqrt{89}\sin\gamma=&8\\
+\sin\gamma=&\frac{8}{\sqrt{89}}\\
+\gamma=&\arcsin\frac{8}{\sqrt{89}}\\
+&\tasto{8}\tastodiv\tastoradicequadrata\tasto{89}\tastouguale\\
+&\tastoisin\tastoans\tastouguale
+\num[round-precision=\lungarrotandamento,round-mode=places]{57.999461679}\\
+	\end{align*}
+\end{exercise}
 %\tcbstoprecording
 % \newpage
 % \section{Soluzioni triangoli rettangoli}
