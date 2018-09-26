@@ -1,12 +1,37 @@
-Controllare che la calcolatrice sia impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
-Basta verificare che \testgradi
-\begin{align*}
-a=&5\\
-\beta=&\ang{30}\\
-\gamma=&\ang{90}-\ang{30}=\ang{60}\\
-c=&a\sin\gamma\\
-=& 5\sin\ang{60}=\num[round-precision=\lungarrotandamento,round-mode=places]{4.330}\\
-b=&a\sin\beta\\
-=& 5\sin\ang{30}=\num[round-precision=1,round-mode=places]{2.5}
-\end{align*}
+$\cos x=\num[round-precision=\lungarrotandamento,round-mode=places]{-0.7548329}$
+
+ Controllare che la calcolatrice sia impostata in gradi sessagesimali\index{Grado!Sessagesimale}.
+ Basta verificare che \testgradi
+
+ In caso contrario modificare le impostazioni.
+
+ Le soluzioni sono
+ \[\begin{cases}
+ x_1=+\alpha+k\ang{360}\\
+ x_2=-\alpha+k\ang{360}\\
+ \end{cases}\]
+ Calcolo $\alpha$
+
+ \begin{center}
+ \begin{tabular}{ll}
+ \tastoicos\tasto{\num[round-precision=\lungarrotandamento,round-mode=places]{-0.7548329}}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{139.0107711}{\si{\degree}}
+ \end{tabular}
+ \end{center}
+
+ Converto in gradi sessagesimali\index{Grado!Sessagesimale}
+
+ \begin{center}
+ \begin{tabular}{ll}
+ \tastoans\tastomeno\tasto{139}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.010771083}{\si{\degree}}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.646265034}{\si{\arcminute}}\\
+ \tastoans\tastomeno\tasto{0}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{0.646265034}{\si{\arcminute}}\\
+ \tastoans\tastoper\tasto{60}\tastouguale&\SI[round-precision=\lungarrotandamento,round-mode=places]{38.77590204}{\si{\arcsecond}}\\
+ \end{tabular}
+ \end{center}
+ \[\alpha=\ang{139;0;38}\]
+ le soluzioni sono quindi
+ \[\begin{cases}
+ x_1=+\ang{139;0;38}+k\ang{360}\\
+ x_2=-\ang{139;0;38}+k\ang{360}\\
+ \end{cases}\]
  
