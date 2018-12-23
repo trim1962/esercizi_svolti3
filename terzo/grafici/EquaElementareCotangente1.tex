@@ -10,13 +10,13 @@
 	\begin{tikzpicture}[>=triangle 45]
 	% draw the coordinates
 	\pgfmathsetmacro{\raggio}{4};
-	\pgfmathsetmacro{\pangolo}{30};
+	\pgfmathsetmacro{\pangolo}{50};
 	\pgfmathsetmacro{\sangolo}{{180+\pangolo}};
 	\pgfmathsetmacro{\mraggio}{\raggio/3};
 	\pgfmathsetmacro{\sraggio}{1.9*\raggio};
 	% draw the unit circle
 	\draw[->] (0,-\raggio-\mraggio) -- (0,\raggio+\mraggio) node[above,fill=white] {$y$};
-	\draw (\raggio,-\raggio-\mraggio) -- (\raggio,\raggio+\mraggio) node[above,fill=white] {};
+	\draw (-\raggio-\mraggio,\raggio) -- (\raggio+\mraggio,\raggio) node[above,fill=white] {};
 	\draw[->] (-\raggio-\mraggio,0) -- (\raggio+\mraggio,0) node[right,fill=white] {$x$};
 	\draw[thick] (0,0) circle(\raggio);
 	\coordinate [label= below left:$O$] (OO)at(0,0);
@@ -29,23 +29,22 @@
 	\coordinate (QX)  at ({\raggio*cos(\sangolo},0);
 	\coordinate (QY)  at (0,{\raggio*sin(\sangolo});
 	\coordinate (M)  at (0,{\raggio*sin(\sangolo});
-	\coordinate (T)  at (\raggio,{\raggio*tan(\sangolo});
+	\coordinate (T)  at ({\raggio*1/tan(\sangolo},\raggio);
 	\node at (Q) [label=above left:$P$]{};
-	\node at (T) [label=above right:$T$]{};
-	\node at (QY) [label=below left:$-\dfrac{9}{10}$]{};
+	\node at (T) [label=above right:$C$]{};
+	\node at (T) [label=below right:$\dfrac{7}{4}$]{};
 	\fill [color=black] (OO) circle (1.5pt);
 %	\fill [color=black] (P) circle (1.5pt);
 	%\fill [color=black] (PX) circle (1.5pt);
-%	\fill [color=black] (PY) circle (1.5pt);
+	\fill [color=black] (QY) circle (1.5pt);
 	%\fill [color=black] (M) circle (1.5pt);
 	\fill [color=black] (Q) circle (1.5pt);
 	\fill [color=black] (QX) circle (1.5pt);
-	\fill [color=black] (QY) circle (1.5pt);
 	\fill [color=black] (T) circle (1.5pt);
 	%\fill [color=black] (QY) circle (1.5pt);
 	%\draw[->] {(\sraggio/2.5},0 ) arc (0:\pangolo:\sraggio/2.5) node[above] {$\arco$};
 	%\draw(Pr)--(Qr);
-%	\draw(P)--(PY);% node[midway,above] {$ cos(\alpha)$};
+	%\draw(P)--(PY);% node[midway,above] {$ cos(\alpha)$};
 	\draw(Q)--(QY);
 	\draw(Q)--(T);
 	% node[midway,above] {$cos(ang{180}-\alpha)$};

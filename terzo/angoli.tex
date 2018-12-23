@@ -1,13 +1,18 @@
 \chapter{Angoli}
 \label{cha:angolibase}
 \section{Conversioni radianti gradi}
-\begin{esempiot}{Conversioni radianti gradi}{crg1}
+\begin{exercise}
 Convertire $\alpha=\ang{45;58;25}$ in radianti\index{Radianti}
-\end{esempiot}
-Prima convertiamo in gradi decimali\index{Radianti}\index{Grado!Sessagesimale}
-\[\alpha=\ang{45}+\left(\dfrac{58}{60}\right)^{\si{\degree} }+\left(\dfrac{25}{3600}\right)^{\si{\degree} }=\ang{45}+\left(\dfrac{58\cdot60+25}{3600}\right)^{\si{\degree} } =\ang{45}+\left(\dfrac{3505}{3600}\right)^{\si{\degree} }\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{45.97361111}\]
-\[\rho=\dfrac{\pi}{180}\alpha\approx\dfrac{\pi}{180}\cdot\ang[round-precision=\lungarrotandamento,round-mode=places]{45.97361111}\approx\SI[round-precision=\lungarrotandamento,round-mode=places]{0.802390882}{\radian}\]
-\stampapuntini
+	\tcblower
+	Convertire $\alpha=\ang{45;58;25}$ in radianti\index{Radianti}
+	\begin{align*}
+	\alpha=&\ang{45}+\left(\dfrac{58}{60}\right)^{\si{\degree} }+\left(\dfrac{25}{3600}\right)^{\si{\degree} }\\
+	=&\ang{45}+\left(\dfrac{58\cdot60+25}{3600}\right)^{\si{\degree}}\\
+	=&\ang{45}+\left(\dfrac{3505}{3600}\right)^{\si{\degree}}\approx\ang[round-precision=\lungarrotandamento,round-mode=places]{45,97361111}
+	\end{align*}
+	\[\rho=\dfrac{\pi}{180}\alpha\approx\dfrac{\pi}{180}\cdot\ang[round-precision=\lungarrotandamento,round-mode=places]{45,97361111}\approx\SI[round-precision=\lungarrotandamento,round-mode=places]{0.802390882}{\radian}\approx\dfrac{1277}{5000}\pi\;\si{\radian}\]
+	%\SI[quotient-mode=fraction]{51/200}{\radian}\]
+\end{exercise}
 \begin{esempiot}{Conversioni radianti gradi}{crg2}
 	Convertire $\alpha=\ang{70;48;25}$ in radianti
 \end{esempiot}
