@@ -1,6 +1,7 @@
-\documentclass[openany]{book}%
+\documentclass[openany,a4paper]{book}%
 \input{../Mod_base/base}
-\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+%\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\usepackage[big]{layaureo}
 \input{../Mod_base/grafica}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
@@ -122,14 +123,13 @@
 \addcontentsline{toc}{section}{Contro esempi}
 \tcblistof[\section*]{cthm}{Contro esempi}
 }
-
 \mainmatter%
 \input{compilaDUE}
+\include{codcalc}
 \backmatter
 \begin{appendices}
 	\input{../Mod_base/MezziUsati}
 \end{appendices}
-
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex
 \end{document}
