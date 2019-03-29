@@ -488,8 +488,37 @@ x_2=\SI[round-precision=\lungarrotandamento,round-mode=places]{0.880312394}+\dfr
  x_2&=-\SI[round-precision=\lungarrotandamento,round-mode=places]{0.721222099}+k\pi \si{\radian}\\ 
  \end{cases}\]
  \end{exercise}
- \begin{exercise}[no solution]
+ \begin{exercise}
  Trovare l'angolo in gradi per cui $\tan 3x=\dfrac{3}{5}$
+ \tcblower
+ $\tan 3x=\dfrac{3}{5}$
+ 
+ Controllare che la calcolatrice sia impostata in gradi\index{Grado!test}\index{Grado!test}\index{Tangente}.
+ 
+ Basta verificare che 
+ \testgradi
+ 
+ In caso contrario modificare le impostazioni.
+ 
+ Non resta che procedere con il calcolo.
+ 
+ Esistenza 
+ \begin{align*}
+ \alpha\neq&\ang{90;;}+k\ang{180;;}\\
+ 3x=&\ang{90;;}+k\ang{180;;}\\
+ x=&\ang{30;;}+k\ang{60;;}\\
+ x\neq&\ang{30;;}+k\ang{60;;}\\
+ \end{align*}
+ Soluzione
+ \begin{align*}
+ \tan 3x=&\frac{3}{5}\\
+ \tan y=&\frac{3}{5}\\
+ \intertext{Calcoliamo $y$}
+ \tastoitan\tasto{\num[round-precision=1,round-mode=places]{0.6}}\tastouguale&\quad\SI[round-precision=\lungarrotandamento,round-mode=places]{30.96375653}{\si{\degree}} +k\ang{180}\\
+ \intertext{Calcoliamo $x$}
+ 3x=&\SI[round-precision=\lungarrotandamento,round-mode=places]{30.96375653}{\si{\degree}} +k\ang{180}\\
+ x=&\SI[round-precision=\lungarrotandamento,round-mode=places]{10.32125218}{\si{\degree}} +k\ang{60}\\
+ \end{align*}
  \end{exercise}
  \begin{exercise}[no solution]
  Trovare l'angolo in radianti per cui $\tan 10x=-\dfrac{7}{2}$
